@@ -10,7 +10,7 @@ sqlite_default = 'sqlite:///' + os.path.join(basedir, 'db.sqlite')
 
 DB_URI = os.getenv('DB_URI', sqlite_default)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv(SQLALCHEMY_DATABASE_URI, sqlite_default)
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv(DB_URI, sqlite_default)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['JSON_SORT_KEYS'] = False
 
