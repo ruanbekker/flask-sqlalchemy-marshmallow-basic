@@ -9,6 +9,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Or a public docker hub container image `ruanbekker/flask-rest-api`.
+
 ## Routes
 
 - `/users` GET
